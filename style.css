@@ -1,95 +1,78 @@
-/* ===== GLOBAL STYLE ===== */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
+/* BODY */
 body {
-    background-color: #f4f6f8;
+    background: #f4f6f8;
     color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 nav {
-    background-color: #2c3e50;
+    background: #1e293b;
     color: white;
-    padding: 15px 40px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav .logo {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
     margin-left: 20px;
-    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== HEADINGS ===== */
-h1, h2 {
-    margin: 30px 0 15px;
+/* PAGE TITLE */
+h2 {
+    margin: 30px 0;
     text-align: center;
 }
 
-/* ===== PARAGRAPH ===== */
-p {
-    margin: 10px auto;
-    width: 70%;
-    line-height: 1.6;
-}
-
-/* ===== TABLE ===== */
+/* TABLE */
 table {
     width: 80%;
-    margin: 20px auto;
+    margin: auto;
     border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 12px;
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
     text-align: center;
 }
 
-table th {
-    background-color: #34495e;
+th {
+    background: #3b82f6;
     color: white;
 }
 
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+tr:hover {
+    background: #f1f5f9;
 }
 
-/* ===== LIST ===== */
-ul {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
-    margin-top: auto;
-    background-color: #2c3e50;
+    margin-top: 40px;
+    background: #1e293b;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px;
 }
