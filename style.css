@@ -1,3 +1,7 @@
+body {
+    background: red !important;
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -126,3 +130,4 @@ footer {
         transform: translateY(0);
     }
 }
+
