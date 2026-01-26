@@ -1,4 +1,4 @@
-/* RESET */
+/* ==================== RESET ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,20 +6,20 @@
     font-family: Arial, sans-serif;
 }
 
-/* BODY */
+/* ==================== BODY ==================== */
 body {
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
 }
 
-/* NAVIGATION BAR */
+/* ==================== NAVIGATION BAR ==================== */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* hijau standard */
     color: white;
     position: sticky;
     top: 0;
@@ -34,28 +34,28 @@ nav .logo {
 
 nav .nav-links a {
     margin-left: 20px;
-    color: white;
+    color: white; /* link putih tetap nampak atas nav hijau */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav .nav-links a:hover {
-    color: #ffeb3b;
+    color: #ffeb3b; /* highlight bila hover */
     text-decoration: underline;
 }
 
-/* PAGE TITLE */
+/* ==================== PAGE TITLE ==================== */
 h1, h2 {
     text-align: center;
     margin: 20px 0;
 }
 
-/* MONTH SECTION */
+/* ==================== MONTH SECTION ==================== */
 .month {
     max-width: 900px;
     margin: 30px auto;
-    background-color: #fff;
+    background-color: #fff; /* kotak putih */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -69,7 +69,7 @@ h1, h2 {
     margin-top: 15px;
 }
 
-/* Day Names */
+/* Day Names (Mon, Tue...) */
 .day-name {
     font-weight: bold;
     text-align: center;
@@ -103,7 +103,7 @@ h1, h2 {
     transform: scale(1.05);
 }
 
-/* RESPONSIVE */
+/* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
     .calendar {
         gap: 3px;
