@@ -22,34 +22,133 @@
 </nav>
 
 <!-- MAIN CONTENT -->
-<main class="monthly-planner">
+<main style="padding:60px 20px;">
 
     <!-- HEADER -->
-    <section class="planner-header">
-        <h1>📅 Monthly Planner 2026</h1>
-        <p>
-            Pilih bulan untuk lihat calendar, set target belajar,
-            tarikh penting dan perancangan bulanan ✨
+    <section style="text-align:center; max-width:800px; margin:0 auto 60px;">
+        <h1 style="font-size:36px; color:#0369a1;">📅 Monthly Planner 2026</h1>
+        <p style="margin-top:12px; font-size:16px; color:#475569;">
+            Pilih bulan untuk lihat calendar, susun jadual belajar,
+            tanda tarikh penting dan rancang hidup dengan tenang ✨
         </p>
     </section>
 
-    <!-- MONTH SELECTOR -->
-    <section class="month-selector">
+    <!-- MONTH BOXES -->
+    <section style="
+        max-width:1000px;
+        margin:auto;
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+        gap:30px;
+    ">
 
-        <a href="january.html" class="month-box">January</a>
-        <a href="february.html" class="month-box">February</a>
-        <a href="march.html" class="month-box">March</a>
-        <a href="april.html" class="month-box">April</a>
+        <!-- MONTH -->
+        <a href="january.html" style="text-decoration:none;">
+            <div style="
+                background:white;
+                padding:40px 20px;
+                border-radius:20px;
+                text-align:center;
+                font-size:20px;
+                font-weight:600;
+                color:#075985;
+                box-shadow:0 15px 35px rgba(14,165,233,0.25);
+                transition:0.35s ease;
+            "
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'"
+            >
+                January
+            </div>
+        </a>
 
-        <a href="may.html" class="month-box">May</a>
-        <a href="june.html" class="month-box">June</a>
-        <a href="july.html" class="month-box">July</a>
-        <a href="august.html" class="month-box">August</a>
+        <a href="february.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                February
+            </div>
+        </a>
 
-        <a href="september.html" class="month-box">September</a>
-        <a href="october.html" class="month-box">October</a>
-        <a href="november.html" class="month-box">November</a>
-        <a href="december.html" class="month-box">December</a>
+        <a href="march.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                March
+            </div>
+        </a>
+
+        <a href="april.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                April
+            </div>
+        </a>
+
+        <a href="may.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                May
+            </div>
+        </a>
+
+        <a href="june.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                June
+            </div>
+        </a>
+
+        <a href="july.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                July
+            </div>
+        </a>
+
+        <a href="august.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                August
+            </div>
+        </a>
+
+        <a href="september.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                September
+            </div>
+        </a>
+
+        <a href="october.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                October
+            </div>
+        </a>
+
+        <a href="november.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                November
+            </div>
+        </a>
+
+        <a href="december.html" style="text-decoration:none;">
+            <div style="background:white; padding:40px 20px; border-radius:20px; text-align:center; font-size:20px; font-weight:600; color:#075985; box-shadow:0 15px 35px rgba(14,165,233,0.25); transition:0.35s;"
+            onmouseover="this.style.transform='translateY(-12px) scale(1.03)'; this.style.boxShadow='0 25px 55px rgba(14,165,233,0.45)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(14,165,233,0.25)'">
+                December
+            </div>
+        </a>
 
     </section>
 
