@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>February Planner | Study Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV BAR -->
+<nav>
+    <div class="logo">Study Space</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="studyplan.html">Study Plan</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="monthlyplanner.html">Monthly Planner</a>
+        <a href="notes.html">Notes</a>
+        <a href="about.html">About</a>
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main style="padding:60px 20px;">
+
+    <!-- HEADER -->
+    <section style="text-align:center; margin-bottom:40px;">
+        <h1 style="font-size:34px; color:#0369a1;">📅 February 2026</h1>
+        <p style="color:#475569;">Short month, strong focus 💪✨</p>
+    </section>
+
+    <!-- CALENDAR -->
+    <section style="max-width:900px; margin:auto;">
+
+        <!-- DAY NAMES -->
+        <div style="
+            display:grid;
+            grid-template-columns:repeat(7,1fr);
+            gap:12px;
+            margin-bottom:12px;
+            text-align:center;
+            font-weight:600;
+            color:#075985;
+        ">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+        </div>
+
+        <!-- DAYS GRID -->
+        <div style="
+            display:grid;
+            grid-template-columns:repeat(7,1fr);
+            gap:12px;
+        ">
+
+            <!-- EMPTY BEFORE DAY 1 (Feb starts Sunday) -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <!-- DAYS -->
+            <div class="day-box">1</div>
+
+            <div class="day-box">2</div>
+            <div class="day-box">3</div>
+            <div class="day-box">4</div>
+            <div class="day-box">5</div>
+            <div class="day-box">6</div>
+            <div class="day-box">7</div>
+            <div class="day-box">8</div>
+
+            <div class="day-box">9</div>
+            <div class="day-box">10</div>
+            <div class="day-box">11</div>
+            <div class="day-box">12</div>
+            <div class="day-box">13</div>
+            <div class="day-box">14</div>
+            <div class="day-box">15</div>
+
+            <div class="day-box">16</div>
+            <div class="day-box">17</div>
+            <div class="day-box">18</div>
+            <div class="day-box">19</div>
+            <div class="day-box">20</div>
+            <div class="day-box">21</div>
+            <div class="day-box">22</div>
+
+            <div class="day-box">23</div>
+            <div class="day-box">24</div>
+            <div class="day-box">25</div>
+            <div class="day-box">26</div>
+            <div class="day-box">27</div>
+            <div class="day-box">28</div>
+
+        </div>
+    </section>
+
+    <!-- BACK BUTTON -->
+    <div style="text-align:center; margin-top:50px;">
+        <a href="monthlyplanner.html" style="
+            padding:12px 26px;
+            background:#0ea5e9;
+            color:white;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:600;
+        ">
+            ← Back to Monthly Planner
+        </a>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Study Space • February Hustle ❄️
+</footer>
+
+<!-- DAY BOX STYLE -->
+<style>
+.day-box{
+    background:white;
+    height:120px;
+    border-radius:16px;
+    padding:12px;
+    font-weight:600;
+    color:#075985;
+    box-shadow:0 12px 30px rgba(14,165,233,0.25);
+    transition:0.3s;
+}
+.day-box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(14,165,233,0.45);
+}
+</style>
+
+</body>
+</html>
