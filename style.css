@@ -177,3 +177,116 @@ h1 {
     display: block;
     height: 60px;
 }
+
+/* ==================== GLOBAL ==================== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ==================== NAVIGATION BAR ==================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav .nav-links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+/* ==================== MONTH SECTIONS ==================== */
+.month {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ==================== CALENDAR GRID ==================== */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 15px;
+}
+
+/* Day Names */
+.day-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Empty Cells */
+.empty {
+    background-color: transparent;
+}
+
+/* Days */
+.day {
+    background-color: #e0f7fa;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.day:hover {
+    background-color: #b2ebf2;
+    transform: scale(1.05);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .calendar {
+        gap: 3px;
+    }
+    .day, .day-name {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
