@@ -2,51 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timetable | Study Space</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVIGATION BAR -->
 <nav>
     <div class="logo">Study Space</div>
-    <div>
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="studyplan.html">Study Plan</a>
         <a href="timetable.html">Timetable</a>
-        <a href="monthly planner.html">Monthly Planner</a>
+        <a href="monthly_planner.html">Monthly Planner</a>
         <a href="notes.html">Notes</a>
         <a href="about.html">About</a>
     </div>
 </nav>
 
-<h2 style="text-align:center;">Weekly Timetable</h2>
+<!-- MAIN CONTENT -->
+<main>
+    <section class="timetable-section">
+        <h2>Weekly Timetable</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 - 10:00</td>
+                        <td>Networking</td>
+                        <td>Security</td>
+                        <td>Self Study</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 12:00</td>
+                        <td>Lab</td>
+                        <td>Routing</td>
+                        <td>Notes Review</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
 
-<table>
-    <tr>
-        <th>Time</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-    </tr>
-    <tr>
-        <td>8:00 - 10:00</td>
-        <td>Networking</td>
-        <td>Security</td>
-        <td>Self Study</td>
-    </tr>
-    <tr>
-        <td>10:00 - 12:00</td>
-        <td>Lab</td>
-        <td>Routing</td>
-        <td>Notes Review</td>
-    </tr>
-</table>
-
+<!-- FOOTER -->
 <footer>
     &copy; 2026 Study Space
 </footer>
 
 </body>
 </html>
-
-
