@@ -126,3 +126,84 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* =========================
+   MONTHLY PLANNER CALENDAR
+   ========================= */
+
+.monthly-planner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.planner-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.planner-header h1 {
+    font-size: 36px;
+    color: #0369a1;
+}
+
+.planner-header p {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #475569;
+}
+
+.month {
+    margin-bottom: 70px;
+}
+
+.month h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #075985;
+}
+
+/* CALENDAR GRID */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 14px;
+    background: rgba(255,255,255,0.85);
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(14,165,233,0.25);
+}
+
+/* DAY NAME */
+.day-name {
+    text-align: center;
+    font-weight: 600;
+    padding: 14px 0;
+    background: linear-gradient(to right, #67e8f9, #7dd3fc);
+    border-radius: 12px;
+    color: #075985;
+}
+
+/* DAY BOX */
+.day {
+    height: 90px;
+    padding: 10px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(56,189,248,0.25);
+    font-weight: 600;
+    color: #075985;
+    transition: 0.35s ease;
+}
+
+/* EMPTY BOX */
+.empty {
+    height: 90px;
+}
+
+/* HOVER EFFECT */
+.day:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(56,189,248,0.45);
+    background: #ecfeff;
+}
