@@ -126,3 +126,54 @@ footer {
         transform: translateY(0);
     }
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.month {
+    margin-bottom: 50px;
+}
+
+.month h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.day-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.day, .empty {
+    height: 100px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.day {
+    position: relative;
+}
+
+.day::after {
+    content: "";
+    display: block;
+    height: 60px;
+}
