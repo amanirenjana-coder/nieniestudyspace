@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <title>About | Nienie Work Space</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 40px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 35px 40px;
+            margin-bottom: 35px;
+            border-radius: 14px;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 28px 60px rgba(0,0,0,0.18);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card p,
+        .card li {
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,51 +56,61 @@
     </div>
 </nav>
 
-<main style="padding:60px 80px; max-width:900px; margin:auto;">
+<div class="container">
 
-<h2 style="text-align:center; font-size:34px; margin-bottom:20px;">
-    About Nienie Work Space
-</h2>
+    <!-- TITLE CARD -->
+    <div class="card" style="text-align:center;">
+        <h2 style="font-size:34px; margin-bottom:15px;">About Nienie Work Space</h2>
+        <p>
+            Nienie Work Space is a personal study website designed to help students
+            manage their learning journey in a more organised, calm, and focused way.
+        </p>
+    </div>
 
-<p style="text-align:center; font-size:18px; line-height:1.8; margin-bottom:40px;">
-    Nienie Work Space is a personal study website designed to help students
-    manage their learning journey in a more organised, calm, and focused way.
-</p>
+    <!-- WHY -->
+    <div class="card">
+        <h3>📘 Why This Space Exists</h3>
+        <p>
+            Studying can sometimes feel overwhelming — too many subjects, too many
+            deadlines, and not enough structure. This workspace was created as a
+            simple solution: a place where everything related to study planning lives
+            in one organised space.
+        </p>
+    </div>
 
-<hr style="margin:40px 0; opacity:0.3;">
+    <!-- FEATURES -->
+    <div class="card">
+        <h3>🗂️ What You Can Do Here</h3>
+        <ul>
+            <li>Plan weekly study tasks using the Study Plan page</li>
+            <li>Organise daily routines with a clear timetable</li>
+            <li>Track monthly goals using the monthly planner</li>
+            <li>Store and review important notes in one place</li>
+        </ul>
+    </div>
 
-<h3 style="font-size:24px; margin-bottom:15px;">📘 Why This Space Exists</h3>
-<p style="font-size:17px; line-height:1.9; margin-bottom:30px;">
-    Studying can sometimes feel overwhelming — too many subjects, too many
-    deadlines, and not enough structure. This workspace was created as a simple
-    solution: a place where everything related to study planning lives in one
-    space.
-</p>
+    <!-- PHILOSOPHY -->
+    <div class="card">
+        <h3>🌱 Learning Philosophy</h3>
+        <p>
+            Nienie Work Space is built with one simple belief:
+            <strong>slow progress is still progress</strong>.
+            Learning is not a race. What matters is consistency, clarity,
+            and taking small steps forward every day.
+        </p>
+    </div>
 
-<h3 style="font-size:24px; margin-bottom:15px;">🗂️ What You Can Do Here</h3>
-<ul style="font-size:17px; line-height:2; margin-left:20px; margin-bottom:35px;">
-    <li>Plan weekly study tasks using the Study Plan page</li>
-    <li>Organise daily routines with a clear timetable</li>
-    <li>Track monthly goals using the monthly planner</li>
-    <li>Store and review important notes in one place</li>
-</ul>
+    <!-- TARGET -->
+    <div class="card">
+        <h3>✨ Made for Students</h3>
+        <p>
+            This space is especially created for students who prefer learning at
+            their own pace — whether you are studying IT, networking, learning from
+            home, or balancing studies with other responsibilities.
+        </p>
+    </div>
 
-<h3 style="font-size:24px; margin-bottom:15px;">🌱 Learning Philosophy</h3>
-<p style="font-size:17px; line-height:1.9; margin-bottom:35px;">
-    Nienie Work Space is built with one simple belief:
-    <strong>slow progress is still progress</strong>.
-    You don’t need to rush, compare yourself with others, or be perfect.
-    Consistency, clarity, and small steps matter more than speed.
-</p>
-
-<h3 style="font-size:24px; margin-bottom:15px;">✨ Made for Students</h3>
-<p style="font-size:17px; line-height:1.9;">
-    This space is especially created for students who prefer learning at their
-    own pace — whether you’re studying IT, networking, self-learning at home,
-    or balancing studies with other responsibilities.
-</p>
-
-</main>
+</div>
 
 <footer style="text-align:center; padding:25px;">
     &copy; 2026 Nienie Work Space · Stay consistent, not perfect 💪
