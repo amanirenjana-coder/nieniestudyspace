@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Plan | Study Space</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        select.status {
+            padding: 8px 14px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .done {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .progress {
+            background: #fef9c3;
+            color: #854d0e;
+        }
+
+        .not-started {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,115 +58,87 @@
 
 <table
     width="100%"
-    border="1"
     cellspacing="0"
     cellpadding="25"
     style="
         font-size:18px;
         background:white;
         border-collapse:collapse;
-        transition:0.4s ease;
         box-shadow:0 18px 40px rgba(0,0,0,0.18);
-    "
-    onmouseover="
-        this.style.transform='translateY(-10px)';
-        this.style.boxShadow='0 35px 70px rgba(0,0,0,0.3)';
-    "
-    onmouseout="
-        this.style.transform='translateY(0)';
-        this.style.boxShadow='0 18px 40px rgba(0,0,0,0.18)';
     "
 >
 
 <thead style="background:#1e293b; color:white;">
 <tr>
-    <th style="width:20%;">Day</th>
-    <th style="width:55%;">Topic / Subject</th>
-    <th style="width:25%;">Status</th>
+    <th width="20%">Day</th>
+    <th width="55%">Topic / Subject</th>
+    <th width="25%">Status</th>
 </tr>
 </thead>
 
 <tbody>
 
-<!-- MONDAY -->
 <tr>
     <td><strong>Monday</strong></td>
     <td>OSI Model</td>
-    <td>✅ Done</td>
+    <td>
+        <select class="status" data-day="monday"></select>
+    </td>
 </tr>
 
-<!-- SPACER -->
-<tr style="height:35px; background:#f1f5f9;">
-    <td colspan="3"></td>
-</tr>
-
-<!-- TUESDAY -->
 <tr>
     <td><strong>Tuesday</strong></td>
     <td>Routing</td>
-    <td>⏳ In Progress</td>
+    <td>
+        <select class="status" data-day="tuesday"></select>
+    </td>
 </tr>
 
-<tr style="height:35px; background:#f1f5f9;">
-    <td colspan="3"></td>
-</tr>
-
-<!-- WEDNESDAY -->
 <tr>
     <td><strong>Wednesday</strong></td>
     <td>Apache Server</td>
-    <td>❌ Not Started</td>
+    <td>
+        <select class="status" data-day="wednesday"></select>
+    </td>
 </tr>
 
-<tr style="height:35px; background:#f1f5f9;">
-    <td colspan="3"></td>
-</tr>
-
-<!-- THURSDAY -->
 <tr>
     <td><strong>Thursday</strong></td>
     <td>Apache Configuration</td>
-    <td>❌ Not Started</td>
+    <td>
+        <select class="status" data-day="thursday"></select>
+    </td>
 </tr>
 
-<tr style="height:35px; background:#f1f5f9;">
-    <td colspan="3"></td>
-</tr>
-
-<!-- FRIDAY -->
 <tr>
     <td><strong>Friday</strong></td>
     <td>Virtual Host Practice</td>
-    <td>❌ Not Started</td>
+    <td>
+        <select class="status" data-day="friday"></select>
+    </td>
 </tr>
 
-<tr style="height:35px; background:#f1f5f9;">
-    <td colspan="3"></td>
-</tr>
-
-<!-- SATURDAY -->
 <tr>
     <td><strong>Saturday</strong></td>
     <td>Revision & Exercises</td>
-    <td>❌ Not Started</td>
+    <td>
+        <select class="status" data-day="saturday"></select>
+    </td>
 </tr>
 
-<tr style="height:35px; background:#f1f5f9;">
-    <td colspan="3"></td>
-</tr>
-
-<!-- SUNDAY -->
 <tr>
     <td><strong>Sunday</strong></td>
     <td>Weekly Review & Notes</td>
-    <td>❌ Not Started</td>
+    <td>
+        <select class="status" data-day="sunday"></select>
+    </td>
 </tr>
 
 </tbody>
 </table>
 
 <p style="margin-top:30px; font-size:17px;">
-    💡 Tip: The spacing helps your eyes focus one day at a time.
+    💡 Tip: Click the status to update it. No GitHub edits needed 😉
 </p>
 
 </main>
@@ -149,6 +147,33 @@
     <p>&copy; 2026 Study Space | Slow progress is still progress 💪</p>
 </footer>
 
+<script>
+const statusOptions = [
+    { value: "not-started", text: "❌ Not Started" },
+    { value: "progress", text: "⏳ In Progress" },
+    { value: "done", text: "✅ Done" }
+];
+
+document.querySelectorAll(".status").forEach(select => {
+    const day = select.dataset.day;
+
+    statusOptions.forEach(opt => {
+        const option = document.createElement("option");
+        option.value = opt.value;
+        option.textContent = opt.text;
+        select.appendChild(option);
+    });
+
+    const saved = localStorage.getItem(day) || "not-started";
+    select.value = saved;
+    select.className = `status ${saved}`;
+
+    select.addEventListener("change", () => {
+        localStorage.setItem(day, select.value);
+        select.className = `status ${select.value}`;
+    });
+});
+</script>
+
 </body>
 </html>
-
